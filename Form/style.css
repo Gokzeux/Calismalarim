@@ -17,7 +17,6 @@ body
 }
 section 
 {
-  
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -30,7 +29,6 @@ section
 }
 section::before 
 {
-  
   content: '';
   position: absolute;
   width: 100%;
@@ -56,6 +54,8 @@ section span:hover
 
 section .signin
 {
+  box-shadow: 0px 15px #fff;
+  text-shadow: 4px 2cap 3px #e5ff00;
   position: absolute;
   width: 400px;
   background: #222;  
@@ -65,7 +65,7 @@ section .signin
   align-items: center;
   padding: 40px;
   border-radius: 4px;
-  box-shadow: 0 15px 35px rgba(0,0,0,9);
+  box-shadow: rgb(255, 0, 0) 0px 20px 40px;
 }
 section .signin .content 
 {
@@ -73,7 +73,6 @@ section .signin .content
   background: linear-gradient(to right, #029ddf, #ff01d9, #029ddf);
   /* background-image: url(https://www.wallpapertip.com/wmimgs/0-3443_abstract-faded-colors-iphone-wallpaper-iphone-colorful-background.jpg); */
   /* background-repeat: no-repeat; */
-  
   position: relative;
   width: 100%;
   display: flex;
@@ -84,7 +83,6 @@ section .signin .content
 }
 section .signin .content h2 
 {
-  
   font-size: 2em;
   color: rgb(10, 176, 227);
   text-transform: uppercase;
@@ -103,13 +101,15 @@ section .signin .content .form .inputBox
 }
 section .signin .content .form .inputBox input 
 {
+  box-shadow: -5px 7px 5px #fff;
+
   position: relative;
   width: 100%;
   background: #333;
   border: none;
   outline: none;
   padding: 25px 10px 7.5px;
-  border-radius: 4px;
+  border-radius: 9px;
   color: #fff;
   font-weight: 500;
   font-size: 1rem;
@@ -127,12 +127,14 @@ section .signin .content .form .inputBox i
 .signin .content .form .inputBox input:focus ~ i,
 .signin .content .form .inputBox input:valid ~ i
 {
+  
   transform: translateY(-7.5px);
   font-size: 0.8rem;
   color: #fff;
 }
 .signin .content .form .links 
 {
+  
   position: relative;
   width: 100%;
   display: flex;
@@ -167,4 +169,5 @@ section .signin .content .form .inputBox i
   text-align: center;
   background-color: lightblue;
   color: #fff;
+  text-shadow: 5px 4px 3px #000;
 }

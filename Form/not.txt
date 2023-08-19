@@ -1,0 +1,23 @@
+yarın gun sonunua kadar, bunları adın gıbı bılmelısın
+
+- css: display --inline --inline-block -block -none kavramları +
+- flex yapısı display:flex, flex: flex-row, flex-direction vs tum flex yapısını +
+- flex grid kullanarak tablo yapımı (table kodları olmadan) +
+ - flex ile farklı calısmalar varsa ornek yaparsın tablo dısında +
+- flex ile header ve footer tasarla bize +
+-  float +
+- overflow +
+- basit bir  form  tasarla fakat tasarımı amator olmasın guzel bır calısma html+ css +
+
+
+- text shadow kullan ornek bır calısmada
+- box shadow kullan
+-bırde border-radius kullan formda
+-inputlar kenarları oval olsun
+
+------------------------------------------------------------------------------
+
+
+nth-child, html elementlerini belirli bir sıraya göre seçe bilmemizi sağlar.
+add : tek tek
+even : çift çift
