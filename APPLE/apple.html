@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Apple(Türkiye)</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="images/ar.png" type="image/x-icon">
+   <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .bg {
+            background-color: rgba(0, 0, 0, 0.813);
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            text-transform: capitalize;
+        }
+
+        .abc {
+            text-decoration: none;
+            color: rgba(212, 203, 203, 0.764);
+            padding-left: 7px;
+            padding-top: 3px;
+            padding-bottom: 4px;
+            transition: 0.8s;
+            float: left;
+            padding-left: 20px;
+            position: sticky;
+        }
+
+        header a:hover {
+            color: white;
+        }
+
+        .gnl {
+            float: left;
+        }
+
+        .ip14 {
+            width: 100%;
+            background-color: rgb(250, 250, 250);
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .bg {
+            background-color: black;
+        }
+
+        .ic {
+            position: absolute;
+            z-index: 2;
+        }
+    
+        .orange{
+            font-weight: bold;
+            font-size: 13px;
+            color: orange;
+        }
+       
+        .cr{
+            cursor: pointer;
+        }
+        
+        .kapaligri{
+            background-color: #323233;
+        }
+        
+        .right{
+            float: right;
+            margin-right: 30px;
+        }
+
+    
+
+        #login{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="pt  col-12 col-sm-hide col-lg-12 col-sm-12 text-white">
+            <ul class="bg  abc ps-5 pt-2 pb-2">
+                <li><a class="abc" href="https://www.apple.com/tr/"><i class="bi bi-apple"></i> </a></li>
+                <li><a class="abc" href="https://www.apple.com/tr/store">Store</a></li>
+                <li><a class="abc" href="https://www.apple.com/tr/mac/">mac</a></li>
+                <li><a class="abc" href="https://www.apple.com/tr/ipad/">ipad</a></li>
+                <li><a class="abc" href="https://www.apple.com/tr/iphone/">iphone</a></li>
+                <li><a class="abc" href="https://www.apple.com/tr/watch/">watch</a></li>
+                <li><a class="abc" href="https://www.apple.com/tr/airpods/">airPods</a></li>
+                <li><a class="abc" href="https://www.apple.com/tr/tv-home/">TV ve Ev</a></li>
+                <li><a class="abc" href="https://www.apple.com/tr/services/">Yalnızca Apple'da</a></li>
+                <li><a class="abc" href="https://www.apple.com/tr/shop/accessories/all">Aksesuarlar</a></li>
+                <li><a class="abc" href="https://support.apple.com/tr-tr">Destek</a></li>
+                <li><a class="abc" href="https://www.apple.com/tr/search"><i class="bi bi-search"></i></a></li>
+                <li><a class="abc" href="https://www.apple.com/tr/shop/bag"><i class="bi bi-bag"></i></a></li>
+                <li class="btn btn-dark right" role="button" onclick="goster()">Giriş Yap</li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- login -->
+    <div class="container gizle" id="login">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Sign In</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="username">
+                            
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="password">
+                        </div>
+                        <div class="row align-items-center remember">
+                            <input type="checkbox">Remember Me
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Login" class="btn float-right login_btn">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        Don't have an account?<a href="#">Sign Up</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="container-fluid text-center lead">
+            <div class="row">
+
+                <div class="ip14">
+                    <h1 class="fw-bold">iPhone 14</h1>
+                    <p>Büyük ve daha büyük.</p>
+                    <div class="linkler">
+                        <div class="container">
+                            <div class="row">
+                                <div class=" col-6 w-50"><a href="https://www.apple.com/tr/iphone-14/">Daha Fazla
+                                        Bilgi<i class="bi bi-chevron-right"></i></a></div>
+                                <div class="col-6 w-25"><a
+                                        href="https://www.apple.com/tr/shop/buy-iphone/iphone-14">Satın alın<i
+                                            class="bi bi-chevron-right"></i></a></div>
+                                <div class="col-md-12">
+                                    <img src="images/iphone14.jpg" alt="ip14" class="img-fluid">
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 14 pro -->
+        <div class="container-fluid text-center lead ba text-white bg">
+            <div class="col-12 bg">
+                <h1 class="fw-bold">iPhone 14 Pro</h1>
+                <p>Daha Pro. Daha İleri.</p>
+                <div class="row">
+                    <div class=" col-6 w-50"><a href="https://www.apple.com/tr/iphone-14/">Daha Fazla
+                            Bilgi<i class="bi bi-chevron-right"></i></a></div>
+                    <div class="col-6 w-25"><a href="https://www.apple.com/tr/shop/buy-iphone/iphone-14">Satın alın<i
+                                class="bi bi-chevron-right"></i></a></div>
+                    <img src="images/iphone14top.png">
+                </div>
+            </div>
+        </div>
+        <!-- bitti 14 pro -->
+
+        <div class="container-fluid text-center lead bg text-white mt-3 pt-3">
+            <div class="row">
+                <h1><i class="bi bi-apple"></i> Watch</h1>
+                <span>Series 8</span>
+                <span>Gelecek İyi Hissettirecek</span>
+                <div class="row">
+                    <div class=" col-6 w-50"><a href="https://www.apple.com/tr/iphone-14/">Daha Fazla
+                            Bilgi<i class="bi bi-chevron-right"></i></a></div>
+                    <div class="col-6 w-25"><a href="https://www.apple.com/tr/shop/buy-iphone/iphone-14">Satın alın<i
+                                class="bi bi-chevron-right"></i></a></div>
+                                
+                        <img src="images/watch.png" alt="" >
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 text-center lead ">
+                    <h2>iPad</h2>
+                    <p>Harika Renkler. Yaratıcı çizimler. <br> İyi eğlenceler. </p>
+                                    <img src="images/ipad.jpg" class="img-fluid">
+                
+                
+                </div>
+                <div class="col-6 bg-black text-white text-center">
+                    <h2 class="mt-5 pt-5">AirPods Pro</h2>
+                    <p>Değişimin Sesi.</p>
+                    <br><br><br><br><br><br>
+                    <img src="images/airpods.png" class="img-fluid">
+                </div>
+                <div class="col-6 bg-light mt-2 text-center">
+                    <h2 class="pt-5 mt-5"><i class="bi bi-apple"></i> Watch</h2>
+                    <p class="orange pt-2">ULTRA</p>
+                    <p class="mb-5">Macera Dolu Saatler</p> 
+                    <img src="images/ultra.jpg" class="img-fluid mt-5">
+                </div>
+                <div class="col-6 text-center ">
+                    <h2 class="mt-5"><i class="bi bi-apple"></i> tv4K</h2>
+                    Benzersiz Apple Deneyimi.<br>
+                    Evinize Sinemanın sihri.
+                    <img src="images/4k.jpg" class="img-fluid">
+                </div>
+                <div class="col-6 text-center">
+                    <img src="images//Ekran Görüntüsü (39).png" class="img-fluid bg">
+                </div> 
+                <div class="col-6 pt- ">
+                    <img src="images/Ekran Görüntüsü (40).png" class="img-fluid bg">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer başla :) -->
+    <footer>
+<img src="images/Ekran Görüntüsü (41).png" class="img-fluid cr">    
+</footer>
+<!-- footer bitti -->
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+
+        <script>
+
+            function goster (){
+                document.getElementById("login").style.display="block";
+            }
+            function gizle (){
+                document
+            }
+
+
+
+        </script>
+
+
+
+
+
+</body>
+
+</html>
