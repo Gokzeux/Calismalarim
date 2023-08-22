@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: #b3d1d2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            justify-content: start;
+            width: 60%;
+            min-width: 1024px;
+            height: 103vh;
+            background-color: rgb(231, 231, 231);
+        }
+
+
+        .header {
+            justify-content: center;
+            align-items: center;
+            margin: 40px 15px 50px 15px;
+            background-color: chocolate;
+            height: 100px;
+            width: 100%;
+        }
+
+        .hero {
+            flex-direction: ;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            margin-top: 170px;
+        }
+
+
+        .left {
+            justify-content: center;
+            width: 250px;
+            height: 450px;
+            background-color: darkgray;
+            margin-left: 20px;
+        }
+
+        .right {
+            background-color: aqua;
+            margin-left: 20px;
+            align-items: end;
+            width: 700px;
+            height: 450px;
+            justify-content: center;
+        }
+
+        .right-inside{
+            justify-content: space-between;
+            background-color: #b3d1d288;
+            width: 95%;
+            height: 57%;
+            margin-bottom: 20px;
+            align-items: end;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            color: white;
+            display: flex;
+        }
+
+        .footer{
+            background-color: chocolate;
+            width: 96%;
+            height: 100px;
+            position: absolute;
+            margin-top: 600px;
+            justify-content: center;
+        }
+
+     
+        .flex{
+            display: flex;
+        }
+
+    </style>
+    <!-- 
+    
+    2. calısma
+
+    sidebar sabit 250px
+
+    content alanı dınamık yıne, min width 1024px ve  width:100%
+
+ -->
+</head>
+
+<body>
+
+
+    <div class="container flex">
+
+        <div class="header flex">Başlık</div>
+
+        <div class="hero flex">
+
+            <div class="left flex">1</div>
+
+            <div class="right flex">
+
+                <div class="right-inside flex">
+
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+
+                </div>
+
+            </div>
+            <div class="footer flex">Başlık</div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

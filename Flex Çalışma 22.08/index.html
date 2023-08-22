@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10;
+        }
+
+        body {
+            background-color: #C6DCC8;
+
+        }
+
+        .img {
+
+            margin: 20px;
+
+        }
+
+        .container {
+            color: black;
+            background-color: #C6DCC8;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            min-width: 800px;
+            width: 100%;
+        }
+
+
+        .header-box {
+            width: 100%;
+            margin-left: 5px;
+            padding: 50px;
+            background-color: #C5857B;
+            border-radius: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+        .hd-first {
+            margin-left: 0px;
+        }
+
+        /* 2. Satır 1. sütun */
+
+        main {
+            min-width: 100%;
+
+        }
+
+        .container-box {
+            display: flex;
+            width: 100%;
+            color: whitesmoke;
+            background-color: #C6DCC8;
+            padding: 10px;
+            min-width: 800px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 130px;
+            height: 130px;
+            border-radius: 10px;
+            background-color: #F7E987;
+        }
+
+        .first-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            /*width: 400px;*/
+            color: #ff0000;
+            background-color: #7E8575;
+            font-weight: bold;
+            /* background-image: url(images/background.gif); 
+            max-width: 100%;
+            height: auto;
+            margin-top: 25px;
+            background-repeat: no-repeat;
+            background-size: 100%; */
+        }
+
+        .two-div {
+            width: 50%;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+        }
+
+        .kutucuk {
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0d778c;
+            border-radius: 9px;
+            margin: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0d778c;
+            transition: all 0.8s;
+            border-radius: 10px;
+        }
+
+        a:hover {
+            background-color: #252B48;
+            border-radius: 13px;
+            padding: 12px;
+        }
+        .icon {
+            transition: all 0.6s;
+        }
+        .icon:hover{
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+
+hepsi flex ile yazılacak
+Flexin width'i 100% ayarla ve min-width: 800px olsun 
+1. satır genişlik ne olursa sutunlar 3 esıt parcaya bolunecek
+
+2. satır 1.sutun genisliği sabit 400 px olacak, ııcınde de ortalanmıs sarı kutu olacak, 
+
+2.satır 2.sutun genıslıgı ise responsive olacak yani diyelim  main flex 1000px  oldu  1000-400 olacak
+
+ -->
+
+
+    <header>
+        <div class="container">
+            <!-- Header -->
+            <div class="header-box hd-first">1</div>
+            <div class="header-box">2</div>
+            <div class="header-box">3</div>
+            <!-- Header -->
+        </div>
+    </header>
+    <main>
+
+        <!-- <div class="box1">
+        <div class="center">Center</div>        
+    </div> -->
+
+        <div class="container-box">
+
+            <div class="first-div">
+                <div class="center"> <a href="">Daha Fazla...<span><i class="bi bi-hand-index icon"></i></span> </a></div>
+            </div>
+
+
+            <div class="two-div">
+                <div class="kutucuk">1</div>
+                <div class="kutucuk">2</div>
+                <div class="kutucuk">3</div>
+                <div class="kutucuk">4</div>
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>
