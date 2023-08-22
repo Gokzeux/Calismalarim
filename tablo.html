@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .oval {
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        .kapsayici {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row-gap: 20px;
+            grid-column-gap: 50px;
+            /*grid-gap: 20px 50px;*/
+        }
+
+        .kapsayici>div:nth-child(1) {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-column: 1 / 4;
+        }
+
+        .kapsayici>div {
+            background-color: lightblue;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .kapsayici>div:nth-child(even) {
+            background-color: rgb(90, 90, 90);
+            color: white;
+        }
+
+        .update {
+            float: right;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 30px;
+            width: 11%;
+            background-color: lightsalmon;
+        }
+
+        .table-update {
+            width: 90px;
+            height: 5vh;
+            background: none;
+            border-radius: 20px;
+            border: 1px solid yellow;
+            transition: 0.8s;
+        }
+
+        .table-update:hover {
+            background: blue;
+        }
+
+        .kapsayici > div > h1 , p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kapsayici">
+        <div>
+            <h1>Başlık</h1>
+            <p>Ürünlerimiz & Hizmetlerimiz</p>
+        </div>
+        <div class="oval">1</div>
+        <div class="oval">2</div>
+        <div class="oval">3</div>
+        <div class="oval">4</div>
+        <div class="oval">5</div>
+        <div class="oval">6</div>
+        <div class="oval">7</div>
+        <div class="oval">8</div>
+        <div class="oval">9</div>
+    </div>
+    <div class="oval update">
+        <button class="table-update">
+            Güncelle & Kaydet
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
