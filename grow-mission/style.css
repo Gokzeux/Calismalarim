@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #C5DFF8;
+  font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header {
+  background-color: #4A55A2;
+  color: white;
+  padding:20px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-bottom: 10px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-content {
+  display: flex;
+}
+
+.sidebar {
+  flex-grow:6;
+  background-color: #7895CB;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 10px;
+}
+
+.content {
+  flex-grow: 3;
+  padding: 20px;
+}
+
+
+
+.footer {
+  background-color: #4A55A2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.kalp{
+  cursor: pointer;
+}
+
+.kalp:hover::before{
+  content: "Arthur ";
+}
+
+.kalp:hover::after{
+  content: " Nasılsın <3";
+
+} 
+
+.kalp::after{
+  content: ":Hover Me";
+}
+
+.container{
+padding: 10px;  
+border-top: 2px solid #4A55A2;
+
+}
+
+.divs{
+  padding: 10px;
+  display: flex;
+}
+
+.div1{
+  padding: 20px;
+  background-color: #4A55A2;
+  flex-grow: 1;
+}
+.div2{
+  padding: 20px;
+  background-color:#7895CB;
+  flex-grow: 2;
+}
+.div3{
+  padding: 20px;
+  background-color: #4A55A2;
+  flex-grow: 7;
+  
+
+}
+.div4{
+  padding: 20px;
+  background-color:#7895CB;
+  flex-grow: 2;
+}
+.div5{
+  padding: 20px;
+  background-color: #4A55A2;
+  flex-grow: 1;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
