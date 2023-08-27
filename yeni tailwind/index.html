@@ -38,6 +38,12 @@ https://opensea.io/static/images/learn-center//how-to-create-nft.png
       display: flex;
       align-items: end;
     }
+
+    .first-div {
+      display: flex;
+      justify-content: space-between;
+
+    }
   </style>
 
 </head>
@@ -260,28 +266,129 @@ https://opensea.io/static/images/learn-center//how-to-create-nft.png
 
 
 
-    <footer class="mt-20">
+  <footer class="mt-20">
 
-      <img class="w-1/6 sm:hidden lg:block md:hidden hidden align-items-end" src="images/batmankose.png" alt="">
-    <img class="w-1/1 lg:hidden md:hidden" src="images/Dark-Knight-Batman-Mask-PNG.PNG" alt="">
 
-        </footer>
-        <script>
-          const hamburger = document.getElementById('hamburger')
-          const menu = document.getElementById('menu')
-          const nav = document.getElementById('nav')
+    <div class="bg-black "><!-- ana div -->
+
+      <!-- Yukarıda ki div -->
+      <div class="  flex py-5 ">
+        <div class=" w-1/2 text-white py-10">
+
+          <img class="w-16 ms-16" src="images/nft-logo-4569196-3802614.jpg" alt="">
+          <h1 class="text-2xl text-white ms-16">NFT</h1>
+
+        </div>
+
+        <div class=" w-1/2 text-white">
+
+          <div class="flex space-x-10">
+
+            <div>
+              <h6 class="text-white border-b">Learn</h6>
+              <ul>
+                <li><a href="">Docs</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">What İs An NFT</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h6 class="text-white border-b">Resources</h6>
+              <ul>
+                <li><a href="">Support</a></li>
+                <li><a href="">Carerrs</a></li>
+                <li><a href="">Businiess</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h6 class="text-white border-b">Policies</h6>
+              <ul>
+                <li><a href="">P.P.</a></li>
+                <li><a href="">Bug Bounty</a></li>
+                <li><a href="">Terms of S.</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="flex">
+        <!-- aşağıdaki div -->
+      
+
+        <div class=" w-full  text-white">
+
+          <div class="flex space-x-10 ms-20">
+
+            <div>
+              <h6 class="text-white border-b">Contact</h6>
+              <ul>
+                <li><a href="">Docs</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">What İs An NFT</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h6 class="text-white border-b">Adress</h6>
+              <ul>
+                <li><a href="">Support</a></li>
+                <li><a href="">Carerrs</a></li>
+                <li><a href="">Businiess</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h6 class="text-white border-b">Where Are We ?</h6>
+              <div>
+                <iframe class="my-12"
+                  src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3059.740826087794!2d32.83644175931842!3d39.92481582172235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x14d34f190a9cea8f%3A0xd3862ea8248d08a0!2zWcO8Y2V0ZXBlLCBBbsSxdGthYmlyLCBBa2Rlbml6IENhZGRlc2ksIMOHYW5rYXlhL0Fua2FyYQ!3m2!1d39.925053999999996!2d32.8369439!4m0!5e0!3m2!1str!2str!4v1693149245431!5m2!1str!2str"
+                  width="700" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+          </div>
+
+          <div>
+            <img class="w-1/4 sm:hidden lg:block md:hidden hidden align-items-end" src="images/batmankose.png" alt="">
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger')
+    const menu = document.getElementById('menu')
+    const nav = document.getElementById('nav')
     const handleClick = () => {
       if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden')
+        menu.classList.remove('hidden')
         nav.classList.add('bg-white')
       } else {
-            menu.classList.add('hidden')
+        menu.classList.add('hidden')
         nav.classList.remove('bg-white')
       }
     }
-          hamburger.addEventListener('click', handleClick)
+    hamburger.addEventListener('click', handleClick)
   </script>
 
 </body>
+<!-- <img class="w-1/6 sm:hidden lg:block md:hidden hidden align-items-end" src="images/batmankose.png" alt=""> -->
+
+<!-- <img class="w-1/1 lg:hidden md:hidden" src="images/Dark-Knight-Batman-Mask-PNG.PNG" alt=""> -->
 
 </html>
