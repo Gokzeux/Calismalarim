@@ -50,10 +50,10 @@ https://opensea.io/static/images/learn-center//how-to-create-nft.png
 
 <body class="min-h-screen bg-gradient-to-r from-cyan-100 to-blue-300">
 
+  <!-- responsive Navbar -->
   <nav id="nav" class="flex gap-3 :space-x-9 items-center relative p-3 ">
 
     <div class="flex items-center gap-3">
-      <!-- <img class="w-12" src="images/pngwing.com.png" alt=""> -->
       <img class="w-16" src="images/nft-logo-4569196-3802614.jpg" alt="">
 
       <div class="text-2xl font-bold tracking-wider hidden lg:flex">GokzeuxNFT</div>
@@ -68,15 +68,15 @@ https://opensea.io/static/images/learn-center//how-to-create-nft.png
       </svg>
       <input class="outline-none w-full" type="text" name="" id="" placeholder="NFT Araması Yap...">
 
-    </div>
+    </div><!-- lg: desktop lar için görünüm -->
     <div class="hidden lg:flex items-center gap-5">
-      <div class="tracking-wider"><a href="#">Ana Sayfa</a></div>
-      <div class="tracking-wider"><a href="#">Hakkımızda</a></div>
-      <div class="tracking-wider"><a href="#">Galeri</a></div>
-      <div class="tracking-wider"><a href="#">İletişim</a></div>
+      <div class="tracking-wider ms-3 text-center py-1 px-3 hover:bg-blue-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg"><a href="index.html">Ana Sayfa</a></div>
+      <div class="tracking-wider ms-3 text-center py-1 px-3 hover:bg-blue-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg"><a href="about.html">Hakkımızda</a></div>
+      <div class="tracking-wider ms-3 text-center py-1 px-3 hover:bg-blue-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg"><a href="galery.html">Galeri</a></div>
+      <div class="tracking-wider ms-3 text-center py-1 px-3 hover:bg-blue-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg"><a href="contact.html">İletişim</a></div>
       <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-8 h-8" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-8 h-8 cursor-pointer tracking-wider text-center hover:bg-gray-300 hover:text-[#BE7F45] transition rounded-lg hover:text-lg" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
         </svg></a>
@@ -94,15 +94,15 @@ https://opensea.io/static/images/learn-center//how-to-create-nft.png
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
 
-    </div> <!-- rounded-full -->
+    </div> <!-- daraltılmış hambger. menu linkleri -->
     <div id="menu"
       class=" hidden :hidden absolute top-[65px] z-50  h-screen left-0 space-y-2 p-3 w-full bg-white rounded-lg ">
-      <div class="tracking-wider  p-2"><a href="#">Ana Sayfa</a></div>
-      <div class="tracking-wider  p-2"><a href="#">Hakkımızda</a></div>
-      <div class="tracking-wider  p-2"><a href="#">Galeri</a></div>
-      <div class="tracking-wider  p-2"><a href="#">İletişim</a></div>
+      <div class="tracking-wider ms-3 w-1/5 text-center py-1 hover:bg-gray-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg"><a href="index.html">Ana Sayfa</a></div>
+      <div class="tracking-wider ms-3 w-1/5 text-center py-1 hover:bg-gray-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg"><a href="about.html">Hakkımızda</a></div>
+      <div class="tracking-wider ms-3 w-1/5 text-center py-1 hover:bg-gray-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg"><a href="galery.html">Galeri</a></div>
+      <div class="tracking-wider ms-3 w-1/5 text-center py-1 hover:bg-gray-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg"><a href="contact.html">İletişim</a></div>
       <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-8 h-8 cursor-pointer w-full  " viewBox="0 0 24 24"
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-8 h-8 cursor-pointer  tracking-wider ms-3 text-center py-1 hover:bg-gray-500 hover:text-white transition rounded-full hover:text-lg" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
@@ -110,9 +110,11 @@ https://opensea.io/static/images/learn-center//how-to-create-nft.png
     </div>
 
   </nav>
+<!-- responsive Navbar finish -->
+
 
   <div>
-    <h1 class="text-center font-bold text-2xl my-5 lg:my-12">NFT Dünyasını Keşfedelim...</h1>
+    <h1 class="text-center text-2xl my-5 lg:my-12">NFT Dünyasını Keşfedelim...</h1>
   </div>
 
   <div class="p-3 flex items-center gap-6 cursor-pointer justify-center lg:gap-2 ">
@@ -158,31 +160,31 @@ https://opensea.io/static/images/learn-center//how-to-create-nft.png
 
     <div class="w-full p-3 items-center justify-center flex gap-2  border-b-2 border-gray-400">
 
-      <div class="w-1/5   shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5   shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-is-nft.png" alt="">
         <div class="">Adım: 1</div>
         <div class="py-2 tracking-wider ">Seçin ve Beğenin</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-is-crypto-wallet.png" alt="">
         <div class="">Adım: 2</div>
         <div class="py-2 tracking-wider ">NFT Cüzdanı</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-are-gas-fees.png " alt="">
         <div class="">Adım: 3</div>
         <div class="py-2 tracking-wider ">Sınırsız Miktar</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//how-to-buy-nft.png" alt="">
         <div class="">Adım: 4</div>
         <div class="py-2 tracking-wider ">Yatırım Yapın</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//how-to-create-nft.png" alt="">
         <div class="">Adım: 5</div>
         <div class="py-2 tracking-wider ">Sahip Olun</div>
@@ -192,31 +194,31 @@ https://opensea.io/static/images/learn-center//how-to-create-nft.png
 
     <div class="w-full p-3 items-center justify-center flex gap-2  border-b-2 border-gray-400">
 
-      <div class="w-1/5   shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5   shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-is-nft.png" alt="">
         <div class="">Adım: 1</div>
         <div class="py-2 tracking-wider ">Seçin ve Beğenin</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-is-crypto-wallet.png" alt="">
         <div class="">Adım: 2</div>
         <div class="py-2 tracking-wider ">NFT Cüzdanı</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-are-gas-fees.png " alt="">
         <div class="">Adım: 3</div>
         <div class="py-2 tracking-wider ">Sınırsız Miktar</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//how-to-buy-nft.png" alt="">
         <div class="">Adım: 4</div>
         <div class="py-2 tracking-wider ">Yatırım Yapın</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//how-to-create-nft.png" alt="">
         <div class="">Adım: 5</div>
         <div class="py-2 tracking-wider ">Sahip Olun</div>
@@ -225,31 +227,31 @@ https://opensea.io/static/images/learn-center//how-to-create-nft.png
     </div>
     <div class="w-full p-3 items-center justify-center flex gap-2">
 
-      <div class="w-1/5   shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5   shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-is-nft.png" alt="">
         <div class="">Adım: 1</div>
         <div class="py-2 tracking-wider ">Seçin ve Beğenin</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-is-crypto-wallet.png" alt="">
         <div class="">Adım: 2</div>
         <div class="py-2 tracking-wider ">NFT Cüzdanı</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-are-gas-fees.png " alt="">
         <div class="">Adım: 3</div>
         <div class="py-2 tracking-wider ">Sınırsız Miktar</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//how-to-buy-nft.png" alt="">
         <div class="">Adım: 4</div>
         <div class="py-2 tracking-wider ">Yatırım Yapın</div>
       </div>
 
-      <div class="w-1/5 shadow-xl cursor-pointer transition rounded-lg hover:-translate-y-2 transition">
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
         <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//how-to-create-nft.png" alt="">
         <div class="">Adım: 5</div>
         <div class="py-2 tracking-wider ">Sahip Olun</div>

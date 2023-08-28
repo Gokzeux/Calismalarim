@@ -1,0 +1,484 @@
+<!--
+
+Attps://i.seadn.io/gcs/files/9b3993367af853569e8174efead8e6a4.png?auto=format&w=512
+ 
++-+
+
+https://opensea.io/static/images/learn-center//what-is-nft.png
+
+https://opensea.io/static/images/learn-center//what-is-crypto-wallet.png
+
+https://opensea.io/static/images/learn-center//what-are-gas-fees.png 
+https://opensea.io/static/images/learn-center//how-to-buy-nft.png
+
+https://opensea.io/static/images/learn-center//how-to-create-nft.png
+
+ -->
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Tailwind Çalışma </title>
+
+  <style>
+    body {
+      font-family: 'Black Ops One', cursive;
+    }
+
+    .batman {
+      display: flex;
+      align-items: end;
+    }
+
+    .first-div {
+      display: flex;
+      justify-content: space-between;
+
+    }
+  </style>
+
+</head>
+
+<body class="min-h-screen bg-gradient-to-r from-cyan-100 to-blue-300">
+
+  <!-- responsive Navbar -->
+  <nav id="nav" class="flex gap-3 :space-x-9 items-center relative p-3 ">
+
+    <div class="flex items-center gap-3">
+      <img class="w-16" src="images/nft-logo-4569196-3802614.jpg" alt="">
+
+      <div class="text-2xl font-bold tracking-wider hidden lg:flex">GokzeuxNFT</div>
+    </div>
+
+    <div class="flex items-center space-x-2 bg-white px-3 py-2 rounded-full flex-1">
+
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="text-gray-500 w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+      </svg>
+      <input class="outline-none w-full" type="text" name="" id="" placeholder="NFT Araması Yap...">
+
+    </div><!-- lg: desktop lar için görünüm -->
+    <div class="hidden lg:flex items-center gap-5">
+      <div
+        class=" tracking-wider ms-3 text-center py-1 px-3 hover:bg-blue-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg">
+        <a href="index.html">Ana Sayfa</a>
+      </div>
+      <div
+        class="tracking-wider ms-3 text-center py-1 px-3 hover:bg-blue-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg">
+        <a href="about.html">Hakkımızda</a>
+      </div>
+      <div
+        class="tracking-wider ms-3 text-center py-1 px-3 hover:bg-blue-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg">
+        <a href="galery.html">Galeri</a>
+      </div>
+      <div
+        class="tracking-wider ms-3 text-center py-1 px-3 hover:bg-blue-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg">
+        <a href="contact.html">İletişim</a>
+      </div>
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+          class="w-8 h-8 cursor-pointer tracking-wider text-center hover:bg-gray-300 hover:text-[#BE7F45] transition rounded-lg hover:text-lg"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+        </svg></a>
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+        </svg></a>
+
+    </div>
+    <div class="cursor-pointer lg:hidden ">
+      <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-10 h-10">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+
+    </div> <!-- daraltılmış hambger. menu linkleri -->
+    <div id="menu"
+      class=" hidden :hidden absolute top-[65px] z-50  h-screen left-0 space-y-2 p-3 w-full bg-white rounded-lg ">
+      <div
+        class="tracking-wider ms-3 w-1/5 text-center py-1 hover:bg-gray-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg">
+        <a href="index.html">Ana Sayfa</a>
+      </div>
+      <div
+        class="tracking-wider ms-3 w-1/5 text-center py-1 hover:bg-gray-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg">
+        <a href="about.html">Hakkımızda</a>
+      </div>
+      <div
+        class="tracking-wider ms-3 w-1/5 text-center py-1 hover:bg-gray-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg">
+        <a href="galery.html">Galeri</a>
+      </div>
+      <div
+        class="tracking-wider ms-3 w-1/5 text-center py-1 hover:bg-gray-400 hover:text-[#BE7F45] transition rounded-full hover:text-lg">
+        <a href="contact.html">İletişim</a>
+      </div>
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+          class=" h-8 cursor-pointer  tracking-wider ms-3 w-1/5 text-center py-1 hover:bg-gray-500 hover:text-white transition rounded-full hover:text-lg"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+        </svg></a>
+    </div>
+
+  </nav>
+  <!-- responsive Navbar finish -->
+
+  <div class="p-3 flex gap-5 items-center my-5 lg:my-10 cursor-pointer">
+    <div class="text-lg pb-2 hover:text-blue-500 ">
+      <a href="index.html">Ana Sayfa</a>
+    </div>
+    <i class="fa-solid fa-chevron-right pb-2"></i>
+    <div class="text-gray-600 text-lg pb-2 border-b border-transparent "> Hakkımızda </div>
+  </div>
+
+  <div>
+    <h1 class="text-center text-2xl my-5 lg:my-12">Hakkımızda Sayfası</h1>
+  </div>
+
+  <div class="">
+    <div class="px-5 py-10 flex justify-center bg-[#279EFF] rounded-lg m-5 bg-gradient-to-bl ">
+
+      <div
+        class="lg:w-5/6 text-[#4943ffb6] text-center rounded-lg p-10 shadow-orange-950 shadow-2xl lg:text-xl text-sm ">
+
+        <h2 class="m-2 mb-8 border-b rounded-full text-black text-xl">Keşfedin, Bağlanın, Dijital Sanatın
+          Büyülü Dünyasında Yer
+          Alın:
+          GokzeuxNFT'nin
+          Hikayesi
+        </h2>
+        GokzeuxNFT olarak, dijital sanatın sınırlarını zorlamak, yaratıcılığı desteklemek ve sanatın evrenselliğini
+        kutlamak
+        amacıyla kurulmuş bir platformuz. Sanatın dönüşen ve çeşitlenen doğasına uygun bir şekilde, geleneksel sanat
+        anlayışını
+        dijital çağın yenilikçi teknolojileriyle birleştirerek sanatçıları, koleksiyonerleri ve meraklıları bir araya
+        getiriyoruz.
+        <br><br>
+        Sanat, insan deneyiminin en güçlü ifade biçimlerinden biridir ve dijital dünya, bu ifadenin sınırlarını
+        genişletme
+        fırsatı sunar. GokzeuxNFT olarak, sanatçıların yaratıcılıklarını dijital formatlarda özgürce ifade etmelerine
+        olanak
+        tanıyan bir alan oluşturuyoruz. Sanatçılar, eserlerini dijital varlıklara dönüştürerek koleksiyonerlerle ve
+        sanatseverlerle buluşturabilir, eserlerinin gerçek dünya ile dijital dünya arasındaki köprülerini kurabilirler.
+        <br><br>
+        Koleksiyonerler için, GokzeuxNFT anlamlı bağlantılar ve anılarla dolu eserlere erişim sağlar. Sanat eserlerinin
+        dijital
+        kopyaları, blockchain teknolojisinin güvencesi altında eşsizliklerini korur ve sahiplerine dijital sanat
+        dünyasında
+        gerçek bir mülkiyet hissi sunar. Koleksiyonerlerimiz, geniş ve çeşitli sanat koleksiyonları oluşturmanın yanı
+        sıra
+        sanatçılarla doğrudan etkileşim kurarak sanatın yaratım sürecine katkıda bulunma fırsatı bulurlar.
+        <br><br>
+        GokzeuxNFT olarak misyonumuz, sanatı demokratikleştirerek herkes için erişilebilir kılmak ve küresel sanat
+        topluluğunu
+        bir araya getirerek yeni anlamlar yaratmaktır. Dijital çağın getirdiği olanaklarla sanatın gücünü
+        birleştiriyoruz ve
+        yaratıcı ifadenin sınırlarını genişletmek için teknolojiyi kullanıyoruz. GokzeuxNFT ailesi olarak, sanatın
+        büyülü
+        dünyasını keşfetmek ve paylaşmak isteyen herkesi platformumuza davet ediyoruz.
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="text-center text-xl text-[#F4AA4F]">GokzeuxNFT Kuruluşu...</div>
+  <div class="flex justify-around">
+    <div class="">
+      <img src="images/kurulum.jpg" class=" ps-5 pe-8 mt-6 rounded-s-full">
+
+      <div class=" me-8 text-end text-[#4943ffb6]">
+
+
+        <h2 class="text-xl mb-2 mt-5  text-black">Gelecek: Yaratıcılığın Dijital Sınırsızlığı</h2>
+        <p>GokzeuxNFT, gelecekte sanatın dijital dünyasını daha da şekillendirmeyi ve yaratıcılığın sınırsızlığını
+          kutlamayı hedefliyor. Sanatçılar için yeni fırsatlar sunarken, sanatseverlerin dijital eserlerin anlamını ve
+          değerini keşfetmelerine yardımcı olmaya devam edeceğiz. Teknoloji ve sanatın bu muhteşem birlikteliğiyle,
+          GokzeuxNFT'nin hikayesi henüz yeni başlıyor.
+
+          GokzeuxNFT olarak, dijital sanatı geleceğe taşımanın gururunu yaşıyoruz. İlerlemeye ve yaratıcılığı
+          desteklemeye
+          devam ederken, sanatın dijital dünyadaki muhteşem yolculuğunu sürdürmekte kararlıyız.</p>
+      </div>
+    </div>
+    <div class="">
+
+      <div class="text-[#4943ffb6]">
+        <h2 class="text-xl mb-2 mt-5 text-black">Kuruluş Hikayesi: GokzeuxNFT</h2>
+
+        <p></p>GokzeuxNFT, dijital sanat ve koleksiyonculuğun heyecan verici dünyasında bir iz bırakan yenilikçi bir
+        girişimin
+        adıdır. Hikayemiz, sanatın dijitalleşen ve blockchain teknolojisiyle birleşen yaratıcı yolculuğunu anlatır.</p>
+
+        <h2 class="text-xl mb-2 mt-5  text-black">Köklerimiz: Dijital Sanatın Doğuşu</h2>
+        <p>Her büyük hikaye gibi, GokzeuxNFT'nin hikayesi de tutkulu bir vizyonla başladı. Kurucumuz, geleneksel sanatın
+          dijital dünyada yeni bir ifade biçimi bulduğu bu dönüşümü gözlemledi. Sanatçıların dijital eserlerini
+          benzersiz
+          kılan, sahiplik ve doğrulama konularında yaşanan zorluklara dikkat çekti. İşte bu fikirle GokzeuxNFT'nin
+          temelleri atıldı.</p>
+
+        <h2 class="text-xl mb-2 mt-5  text-black">İlk Adımlar: Sanatı Blockchain İle Buluşturmak</h2>
+        <p>GokzeuxNFT'nin başlangıcı, sanatın dijital dünyadaki değerini ve özgünlüğünü korumak amacıyla atıldı.
+          Teknoloji
+          ve yaratıcılığın birleştiği bu yolda, blockchain teknolojisinin sağladığı şeffaflık ve güvenilirlikle sanat
+          eserlerinin dijital kopyalarına karşı dayanıklı bir çözüm sunmayı hedefledik.</p>
+        <h2 class="text-xl mb-2 mt-5  text-black">Yükseliş: Sanat Koleksiyonculuğunun Yeni Yüzü</h2>
+        <p>GokzeuxNFT olarak, sanatçıları ve koleksiyonerleri bir araya getiren dinamik bir platform inşa ettik.
+          Sanatçılar, eserlerini dijital olarak tokenize ederek koleksiyonerlere sunabilirken, koleksiyonerler orijinal
+          dijital sanat eserlerini sahiplenmenin ve ticaretinin tadını çıkarabilirler. Bu süreç, sanat dünyasının
+          sınırlarını yeniden tanımladı ve sanat eserlerinin dijital sahipliğini ölümsüzleştirdi.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="text-center text-xl text-[#F4AA4F] my-8 border-t-2">Özveri ve Yaratıcılığın Başarısı</div>
+  <div class="flex justify-around">
+    <div class="">
+      <img src="images/anonim-sirket.jpg" class=" ps-5 pe-8 mt-6 rounded-e-full">
+
+      <div class=" ms-4 text-[#4943ffb6]">
+
+
+        <h2 class="text-xl mb-2 mt-5  text-black ">Gelecek: Yaratıcılığın Dijital Sınırsızlığı</h2>
+        <p>GokzeuxNFT, gelecekte sanatın dijital dünyasını daha da şekillendirmeyi ve yaratıcılığın sınırsızlığını
+          kutlamayı hedefliyor. Sanatçılar için yeni fırsatlar sunarken, sanatseverlerin dijital eserlerin anlamını ve
+          değerini keşfetmelerine yardımcı olmaya devam edeceğiz. Teknoloji ve sanatın bu muhteşem birlikteliğiyle,
+          GokzeuxNFT'nin hikayesi henüz yeni başlıyor.
+
+          GokzeuxNFT olarak, dijital sanatı geleceğe taşımanın gururunu yaşıyoruz. İlerlemeye ve yaratıcılığı
+          desteklemeye
+          devam ederken, sanatın dijital dünyadaki muhteşem yolculuğunu sürdürmekte kararlıyız.</p>
+      </div>
+    </div>
+    <div class="">
+
+      <div class="text-[#4943ffb6]"> 
+        
+        
+        <p>GokzeuxNFT, kuruluşundan itibaren büyük bir özveri ve planlı çalışma anlayışıyla faaliyet göstermektedir.
+        Şirketin çalışma ve planlama yaklaşımları, başarılı bir şekilde yaratıcılığı, teknolojiyi ve iş süreçlerini bir
+        araya getirme konusunda nasıl öne çıktığını gösterir.</p>
+        
+        <h2 class="text-xl mb-2 mt-5 text-black">Özveri ve Çalışkanlık</h2>
+
+        <p></p>GokzeuxNFT, misyonu olan dijital sanatı geniş kitlelere taşımak ve sanatçıların değerini en üst düzeye çıkarmak
+        amacıyla yoğun bir şekilde çalışmaktadır. Ekip üyeleri, bu misyonu gerçekleştirmek için büyük bir tutku ve
+        özveriyle çalışmaktadır. Şirket, dijital sanat dünyasında kalıcı bir etki bırakma hedefiyle, emeklerini
+        esirgemeden projelerini geliştirmekte ve sürekli olarak yenilikçi çözümler arayışında olmaktadır.</p>
+
+        <h2 class="text-xl mb-2 mt-5  text-black">Planlı Çalışma</h2>
+        <p>GokzeuxNFT, başarısını planlı ve organize bir şekilde çalışmaya borçludur. Şirket, proje yönetimi, zaman
+          çizelgeleri, önceliklendirme ve kaynak dağıtımı gibi yönetim süreçlerini etkin bir şekilde kullanarak işlerini
+          yürütmektedir. Her aşama, detaylı bir şekilde planlanır ve izlenir, böylece hedeflere ulaşmak için gereken
+          adımlar net bir şekilde belirlenir.</p>
+
+        <h2 class="text-xl mb-2 mt-5  text-black">Yaratıcılık ve Teknoloji</h2>
+        <p>GokzeuxNFT'nin planlı çalışma yaklaşımı, yaratıcılığı ve teknolojiyi birleştiren özgün projelerin ortaya
+          çıkmasını sağlar. Şirket, dijital sanat dünyasına yeni ve yenilikçi bakış açıları getirirken, bunu teknolojiyle
+          destekleyerek kaliteli ve değerli ürünler sunar.</p>
+
+        <h2 class="text-xl mb-2 mt-5  text-black">Sürekli Gelişim</h2>
+        <p>GokzeuxNFT, çalışmalarını sadece mevcut başarılarla sınırlamaz, aynı zamanda sürekli gelişimi de hedefler.
+          Şirket, geri bildirimleri dikkate alarak sürekli olarak kendini yeniler ve daha iyi hale gelmeye odaklanır. Bu
+          sürekli öğrenme ve gelişim yaklaşımı, şirketin daha da büyümesine ve başarılı projelere imza atmasına olanak
+          tanır.
+          <br>
+          Sonuç olarak, GokzeuxNFT, yoğun çalışma ve planlı bir yaklaşımla faaliyet gösteren, yaratıcılığı ve teknolojiyi
+          bir araya getirerek dijital sanat dünyasında öncü bir rol üstlenen bir şirkettir.</p>
+
+
+       
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- En çok satanlar -->
+  <div class="text-center lg:text-xl text-sm">
+
+    <div class="p-3 flex gap-5 items-center my-5 lg:my-10 cursor-pointer">
+      <div class="text-xl border-b border-black pb-2"> En Çok Satılanlar </div>
+      <div class="text-gray-600 text-xl pb-2 border-b border-transparent "> En Uygunlar </div>
+    </div>
+
+
+
+    <h3 class=" text-xl">NFT'ye Sahip Olma Yolu</h3>
+
+    <div class="w-full p-3 items-center  first-div gap-2  border-b-2 border-gray-400">
+
+      <div class="w-1/5   shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition ">
+        <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-is-nft.png" alt="">
+        <div class="">Adım: 1</div>
+        <div class="py-2 tracking-wider ">Seçin ve Beğenin</div>
+      </div>
+
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
+        <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-is-crypto-wallet.png" alt="">
+        <div class="">Adım: 2</div>
+        <div class="py-2 tracking-wider ">NFT Cüzdanı</div>
+      </div>
+
+      <div class="w-1/5 shadow-xl cursor-pointer rounded-lg hover:-translate-y-2 transition">
+        <img class="rounded-lg" src="https://opensea.io/static/images/learn-center//what-are-gas-fees.png " alt="">
+        <div class="">Adım: 3</div>
+        <div class="py-2 tracking-wider ">Sınırsız Miktar</div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <footer class="mt-20">
+
+
+    <div class="bg-black "><!-- ana div -->
+
+      <!-- Yukarıda ki div -->
+      <div class="  flex py-5 ">
+        <div class=" w-1/2 text-white py-10">
+
+          <img class="w-16 ms-16" src="images/nft-logo-4569196-3802614.jpg" alt="">
+          <h1 class="text-2xl text-white ms-16">NFT</h1>
+
+        </div>
+
+        <div class=" w-1/2 text-white">
+
+          <div class="flex space-x-10">
+
+            <div>
+              <h6 class="text-white border-b">Learn</h6>
+              <ul>
+                <li><a href="">Docs</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">What İs An NFT</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h6 class="text-white border-b">Resources</h6>
+              <ul>
+                <li><a href="">Support</a></li>
+                <li><a href="">Carerrs</a></li>
+                <li><a href="">Businiess</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="flex">
+        <!-- aşağıdaki div -->
+
+
+        <div class=" w-full  text-white">
+
+          <div class="flex space-x-10 ms-20">
+
+            <div>
+              <h6 class="text-white border-b">Contact</h6>
+              <ul>
+                <li><a href="">Docs</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">What İs An NFT</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h6 class="text-white border-b">Adress</h6>
+              <ul>
+                <li><a href="">Support</a></li>
+                <li><a href="">Carerrs</a></li>
+                <li><a href="">Businiess</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <img class="w-1/4 sm:hidden lg:block md:hidden hidden align-items-end" src="images/batmankose.png" alt="">
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger')
+    const menu = document.getElementById('menu')
+    const nav = document.getElementById('nav')
+    const handleClick = () => {
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden')
+        nav.classList.add('bg-white')
+      } else {
+        menu.classList.add('hidden')
+        nav.classList.remove('bg-white')
+      }
+    }
+    hamburger.addEventListener('click', handleClick)
+  </script>
+
+</body>
+<!-- <img class="w-1/6 sm:hidden lg:block md:hidden hidden align-items-end" src="images/batmankose.png" alt=""> -->
+
+<!-- <img class="w-1/1 lg:hidden md:hidden" src="images/Dark-Knight-Batman-Mask-PNG.PNG" alt=""> -->
+
+</html>
