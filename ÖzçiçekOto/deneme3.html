@@ -6,101 +6,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    header {
+      font-family: 'Lobster', cursive;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    #info {
+      font-size: 18px;
+      color: #555;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    a {
+      color: #074E8C;
+    }
+
+    .scrollbar {
+      margin-left: 30px;
+      float: left;
+      height: 300px;
+      width: 65px;
+      background: #F5F5F5;
+      overflow-y: scroll;
+      margin-bottom: 25px;
+    }
+
+    .force-overflow {
+      min-height: 450px;
+    }
+
+    #wrapper {
+      text-align: center;
+      width: 500px;
+      margin: auto;
+    }
+
+   
+
+
+
+    ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #F5F5F5;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+      background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-image: -webkit-gradient(linear,
+          left bottom,
+          left top,
+          color-stop(0.44, rgb(122, 153, 217)),
+          color-stop(0.72, rgb(73, 125, 189)),
+          color-stop(0.86, rgb(28, 58, 148)));
+    }
+
+  
+  </style>
 
 </head>
 
 <body>
 
-  <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
-  <footer class="bg-[#000]">
-    <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <img class="h-20 w-auto" src="images/logo.jpg" alt="ozcicek">
-        <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-xl font-bold leading-6 text-white">Sayfalar</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <a href="index.html" class="text-sm leading-6 text-gray-300 hover:text-white">Ana Sayfa</a>
-                </li>
+  <div id="wrapper">
 
-                <li>
-                  <a href="about.html" class="text-sm leading-6 text-gray-300 hover:text-white">Hakkımızda</a>
-                </li>
+    
 
-                <li>
-                  <a href="service.html" class="text-sm leading-6 text-gray-300 hover:text-white">Hizmetlerimiz</a>
-                </li>
 
-                <li>
-                  <a href="contact.html" class="text-sm leading-6 text-gray-300 hover:text-white">İletişim</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-xl  font-bold leading-6 text-white">İletişim</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Serdar Usta:<span
-                      class="text-blue-400 font-bold"> 0 532 391 6947</a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Orhan Usta:<span
-                      class="text-blue-400"> 0 538 645 8295</a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Parça Bölümü Fikret:<span
-                      class="text-blue-400"> 0 535 435 9136</a>
-                </li>
-
-                <div class="text-lg text-white font-bold">Adresimiz;</div>
-                <li>
-                  <a href="http://https://www.google.com/maps/dir/38.4188892,27.0676394/%C3%B6z%C3%A7i%C3%A7ek+oto/@38.412357,27.0326663,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x14bbd9e2bfd12b15:0xde6833d245b8d301!2m2!1d27.0926046!2d38.479924?entry=ttu"
-                    class="text-sm leading-6 text-gray-300 hover:text-white">CUMHURİYET MAH, Anadolu Cd. <br> NO 588,
-                    35000
-                    Karşıyaka/İzmir</a>
-
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
-        <div class="flex space-x-6 md:order-2">
-          <a href="https://www.facebook.com/" class="text-gray-500 hover:text-gray-400">
-            <span class="sr-only">Facebook</span>
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill-rule="evenodd"
-                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                clip-rule="evenodd" />
-            </svg>
-          </a>
-        </div>
-        <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">Özçiçek Oto Tamir &copy;2023  Tüm Hakları Saklıdır.</p>
-      </div>
+    <div class="scrollbar" id="style-7">
+      <div class="force-overflow"></div>
     </div>
-  </footer>
+
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 </body>
