@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <title>Özçiçek Oto Tamir</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/icon (2).png" width="200px" type="image/x-icon">
+  <title>Özçiçek Oto Tamir</title>
 
-    <style>
+  <style>
+    body {
+      font-family: Verdana, Geneva, sans-serif;
+    }
 
-        body{
-            font-family: Verdana, Geneva, sans-serif;
-        }
+    /* scrolbar */
 
-        /* scrolbar */
-
-::-webkit-scrollbar-track {
+    ::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
       background-color: #000000;
       border-radius: 10px;
@@ -38,174 +38,354 @@
           color-stop(0.72, #5454C5),
           color-stop(0.86, #639CD9));
     }
-
-
-
-    </style>
+  </style>
 </head>
+
 <body class="bg-[#000000]">
 
-    <nav id="nav" class="bg-black z-50">
-        <div  class="mx-auto max-w-7xl px-2 py-8 sm:px-6 lg:px-8">
-          <div class="relative flex h-16 items-center justify-between">
-            <div  class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <!-- Mobile menu button-->
-              <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <!-- Icon when menu is closed.   
+  <nav id="nav" class="bg-black z-50">
+    <div class="mx-auto max-w-7xl px-2 py-8 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button"
+            class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!-- Icon when menu is closed.   
                   Heroicon name: outline/bars-3
                   Menu open: "hidden", Menu closed: "block"  -->
-                <svg id="hamburger" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                <!--Icon when menu is open.
+            <svg id="hamburger" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--Icon when menu is open.
                 Heroicon name: outline/x-mark
                 Menu open: "block", Menu closed: "hidden"
                 -->
-                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div   class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div class="flex flex-shrink-0 items-center">
-                <img class="block h-20 w-full lg:hidden" src="images/logo.jpg" alt="ozcicek">
-                <img class="hidden h-20 w-full lg:block" src="images/logo.jpg" alt="ozcicek">
-                <h4 class=" absolute text-white mt-12 -mb-12 -ms-6 font-bold">Özçiçek Oto Tamir</h4>
-              </div>
-            </div>
-            <div class="hidden sm:ml-6 sm:block">
-                <div class="flex space-x-4 items-center py-6">
-                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Ana Sayfa</a>
-                  
-                    <a href="about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Hakkımızda</a>
-
-                    <a href="service.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Hizmetlerimiz</a>
-
-                  <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">İletişim</a>
-      
-
-                </div>
-              </div>
-            <div  class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            </div>
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <img class="block h-20 w-full lg:hidden" src="images/logo.jpg" alt="ozcicek">
+            <img class="hidden h-20 w-full lg:block" src="images/logo.jpg" alt="ozcicek">
+            <h4 class=" absolute text-white mt-12 -mb-12 -ms-12 font-bold">Özçiçek Oto Tamir</h4>
           </div>
         </div>
-      
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div id="menu" class="sm:hidden" id="mobile-menu">
-          <div class="space-y-1 px-2 pt-2 pb-3">
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4 items-center py-6">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Ana Sayfa</a>
-           
-        <a href="about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Hakkımızda</a>
-    
-        <a href="service.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Hizmetlerimiz</a>
-       
-        <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">İletişim</a>
-            
+            <a href="index.html"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Ana
+              Sayfa</a>
+
+            <a href="about.html"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Hakkımızda</a>
+
+            <a href="service.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+              aria-current="page">Hizmetlerimiz</a>
+
+            <a href="contact.html"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">İletişim</a>
+
+
           </div>
         </div>
-      </nav>
-      
-      
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div id="menu" class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pt-2 pb-3">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="index.html"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Ana
+          Sayfa</a>
+
+        <a href="about.html"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Hakkımızda</a>
+
+        <a href="service.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+          aria-current="page">Hizmetlerimiz</a>
+
+        <a href="contact.html"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">İletişim</a>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section aria-labelledby="collections-heading" class="bg-[0000] text">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:pt-32">
+        <h2 id="collections-heading" class="text-2xl font-bold text-white text-center">Hizmetlerimiz Neler ?</h2>
+
+        <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+          <div class="group relative">
+            <div
+              class="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-70 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="images/yag.jpg"
+                alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-lg font-bold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Yağ değişim:
+              </a>
+            </h3>
+            <p class="text-sm font-semibold text-white">Aracınızın Yağ filtresi, Hava filtresi ve mazot filtreleri
+              sökülüp yerine sıfır filtreler takılır. Aracınızda olan eski yağ boşaltılıp yenisi doldurulur yağ
+              seçiminize göre. </p>
+          </div>
+
+          <div class="group relative">
+            <div
+              class="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="images/balata.jpg"
+                alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-lg font-bold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Balata Değişimi:
+              </a>
+            </h3>
+            <p class="text-sm font-semibold text-white">Aracınızın hangi balataların bittiği tespit edilip bize ait
+              olan parça dükkanından balata seçimi yapabilirsiniz bütçenize göre. Tamamen Sizin isteğinize göre. Bizi
+              arayıp sorarak bu konuda bilgi alabilirsiniz</p>
+          </div>
+
+          <div class="group relative">
+            <div
+              class="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="images/motorarıza.jpg" alt="Collection of four insulated travel bottles on wooden shelf."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-lg font-bold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Motor Arızası Bulma:
+              </a>
+            </h3>
+            <p class="text-sm font-semibold text-white">Aracınızda garip sesler geliyor ise ustalarımızın tecrübesi
+              sayesinde sorun çözülecektir eğer ki elektronik bir arıza var ise <strong
+                class="text-lg text-blue-400">Arıza Bulma Cihazlarımız</strong> Mevcuttur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10">
+      <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-10">
+        <div class=" space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+          <div class="group relative">
+            <div
+              class="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-70 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="images/oilfilter.jpg"
+                alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-lg font-bold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Yağ değişim:
+              </a>
+            </h3>
+            <p class="text-sm font-semibold text-white">Aracınızın Yağ filtresi, Hava filtresi ve mazot filtreleri
+              sökülüp yerine sıfır filtreler takılır. Aracınızda olan eski yağ boşaltılıp yenisi doldurulur yağ
+              seçiminize göre. </p>
+          </div>
+
+          <div class="group relative">
+            <div
+              class="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="images/balatafilter.jpg"
+                alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-lg font-bold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Balata Değişimi:
+              </a>
+            </h3>
+            <p class="text-sm font-semibold text-white">Aracınızın hangi balataların bittiği tespit edilip bize ait
+              olan parça dükkanından balata seçimi yapabilirsiniz bütçenize göre. Tamamen Sizin isteğinize göre. Bizi
+              arayıp sorarak bu konuda bilgi alabilirsiniz</p>
+          </div>
+
+          <div class="group relative">
+            <div
+              class="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+              <img src="images/sanzıman.png" alt="Collection of four insulated travel bottles on wooden shelf."
+                class="h-full w-full object-cover object-center">
+            </div>
+            <h3 class="mt-6 text-lg font-bold text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Motor Arızası Bulma:
+              </a>
+            </h3>
+            <p class="text-sm font-semibold text-white">Aracınızda garip sesler geliyor ise ustalarımızın tecrübesi
+              sayesinde sorun çözülecektir eğer ki elektronik bir arıza var ise <strong
+                class="text-lg text-blue-400">Arıza Bulma Cihazlarımız</strong> Mevcuttur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-      <footer class="bg-[#000]">
-        <h2 id="footer-heading" class="sr-only">Footer</h2>
-        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-          <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-            <img class="h-20 w-auto" src="images/footerlogo.jpg" alt="ozcicek">
-            <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-              <div class="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h3 class="text-xl font-bold leading-6 text-white">Sayfalar</h3>
-                  <ul role="list" class="mt-6 space-y-4">
-                    <li>
-                      <a href="index.html" class="text-sm leading-6 text-gray-300 hover:text-white">Ana Sayfa</a>
-                    </li>
-    
-                    <li>
-                      <a href="about.html" class="text-sm leading-6 text-gray-300 hover:text-white">Hakkımızda</a>
-                    </li>
-    
-                    <li>
-                      <a href="service.html" class="text-sm leading-6 text-gray-300 hover:text-white">Hizmetlerimiz</a>
-                    </li>
-    
-                    <li>
-                      <a href="contact.html" class="text-sm leading-6 text-gray-300 hover:text-white">İletişim</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h3 class="text-xl  font-bold leading-6 text-white">İletişim</h3>
-                  <ul role="list" class="mt-6 space-y-4">
-                    <li>
-                      <a href="tel:0 532 391 6947" class="text-sm leading-6 text-gray-300 hover:text-white">Serdar Usta:<span
-                          class="text-blue-400 font-bold"> 0 532 391 6947</a>
-                    </li>
-    
-                    <li>
-                      <a href="tel: 0 538 645 8295" class="text-sm leading-6 text-gray-300 hover:text-white">Orhan Usta:<span
-                          class="text-blue-400"> 0 538 645 8295</a>
-                    </li>
-    
-                    <li>
-                      <a href="tel:0 535 435 9136" class="text-sm leading-6 text-gray-300 hover:text-white">Parça Bölümü Fikret:<span
-                          class="text-blue-400"> 0 535 435 9136</a>
-                    </li>
-    
-                    <div class="text-lg text-white font-bold">Adresimiz;</div>
-                    <li>
-                      <a href="http://https://www.google.com/maps/dir/38.4188892,27.0676394/%C3%B6z%C3%A7i%C3%A7ek+oto/@38.412357,27.0326663,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x14bbd9e2bfd12b15:0xde6833d245b8d301!2m2!1d27.0926046!2d38.479924?entry=ttu"
-                        class="text-sm leading-6 text-gray-300 hover:text-white">CUMHURİYET MAH, Anadolu Cd. <br> NO 588,
-                        35000
-                        Karşıyaka/İzmir</a>
-    
-                    </li>
-                  </ul>
-                </div>
-    
+  <div class=" py-16 sm:py-24 text-white">
+    <div class="lg:w-full lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
+      <div class=" sm:py-16 lg:py-0">
+        <div class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-20">
+          <!-- Testimonial card-->
+          <div class="relative overflow-hidden rounded-2xl pt-96 pb-24 shadow-xl">
+            <img class="absolute inset-0 h-full w-full object-cover"
+              src="images/auto-mechanic-working-garage-repair-service.jpg" alt="">
+            <div class="absolute inset-0 bg-indigo-500 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90"></div>
+            <div class="relative px-8">
+              <div>
+                <p class="font-bold text-2xl">Disiplinli Çalışma</p>
               </div>
             </div>
           </div>
-          <div class="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-around">
-            <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">Özçiçek Oto Tamir &copy;2023  Tüm Hakları Saklıdır.</p>
+        </div>
+
+        <div class=" mx-auto max-w-md px-6 sm:max-w-2xl lg:px-0 text-white">
+          <!-- Content area -->
+          <div class="pt-6 sm:pt-12 lg:pt-0">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Aracınızda ki Tüm sorunlar</h2>
+            <div class="mt-6 space-y-6">
+              <p class="tracking-[.25em] lg:text-lg">Özçiçek Oto Tamir İşletmesi olarak, işimizi diğerlerinden ayıran
+                bazı
+                temel unsurlar
+                bulunmaktadır. Bu unsurlar, müşterilerimize daha iyi bir deneyim sunma konusundaki kararlılığımızı
+                yansıtmaktadır.</p>
+
+
+              <p class="my-5"> <span class="font-bold">1. Müşteri Odaklılık:</span> Bizim için her şeyden önce
+                müşterilerimiz gelir. Sizleri dinlemek ve
+                ihtiyaçlarınızı anlamak, işimizin merkezinde yer alır. Aracınızı bize teslim ettiğinizde, size özel
+                çözümler sunarak ve şeffaf bir iletişimle güvende olduğunuzu hissettiririz.</p>
+                
+              <p class="my-5"> <span class="font-bold">2. Profesyonellik:</span> Uzman ekip ve son teknoloji
+                ekipmanlarımızla donanmış bir işletme olarak, araçlarınıza en iyi bakımı sunarız. İşçiliğimizdeki
+                titizlik
+                ve kalite standartlarımız, her aşamada kendini gösterir.</p>
+
+              <p class="my-5"> <span class="font-bold">3. Hızlı ve Etkin Hizmet:</span> Bizim için her şeyden önce
+                müşterilerimiz gelir. Sizleri dinlemek ve
+                ihtiyaçlarınızı anlamak, işimizin merkezinde yer alır. Aracınızı bize teslim ettiğinizde, size özel
+                çözümler sunarak ve şeffaf bir iletişimle güvende olduğunuzu hissettiririz.</p>
+
+              <p class="my-5"> <span class="font-bold">4. Teknolojik Yetkinlik:</span> Bizim için her şeyden önce
+                müşterilerimiz gelir. Sizleri dinlemek ve
+                ihtiyaçlarınızı anlamak, işimizin merkezinde yer alır. Aracınızı bize teslim ettiğinizde, size özel
+                çözümler sunarak ve şeffaf bir iletişimle güvende olduğunuzu hissettiririz.</p>
+
+              <p class="my-5">Özçiçek Oto Tamir İşletmesi olarak, aracınıza sadece bir araç olarak değil, sizin için
+                önemli bir parça olarak yaklaşırız. Sizi farklı kılan işletmemizi seçtiğiniz için teşekkür ederiz.</p>
+
+            </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
 
-      <script>
-        const hamburger = document.getElementById('hamburger')
-        const menu = document.getElementById('menu')
-        const nav = document.getElementById('nav')
-        const handleClick = () => {
-          if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden')
-          } else {
-            menu.classList.add('hidden')
-          }
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="bg-[#000]">
+      <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32 ">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <img class="h-20 w-auto" src="images/logo.jpg" alt="ozcicek">
+          <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 class="text-xl font-bold leading-6 text-white">Sayfalar</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a href="index.html" class="text-sm leading-6 text-gray-300 hover:text-white">Ana Sayfa</a>
+                  </li>
+
+                  <li>
+                    <a href="about.html" class="text-sm leading-6 text-gray-300 hover:text-white">Hakkımızda</a>
+                  </li>
+
+                  <li>
+                    <a href="service.html" class="text-sm leading-6 text-gray-300 hover:text-white">Hizmetlerimiz</a>
+                  </li>
+
+                  <li>
+                    <a href="contact.html" class="text-sm leading-6 text-gray-300 hover:text-white">İletişim</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <ul role="list" class="mt-6 space-y-4">
+                  <div class="text-lg text-white font-bold">Adresimiz;</div>
+                  <li>
+                    <a target="_blank"
+                      href="https://www.google.com/maps/dir//%C3%B6z%C3%A7i%C3%A7ek+otomotiv/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x14bbd9e2bfd12b15:0xde6833d245b8d301?sa=X&ved=2ahUKEwjl3YbQwIeBAxUURvEDHbWNA-0Q9Rd6BAhAEAA&ved=2ahUKEwjl3YbQwIeBAxUURvEDHbWNA-0Q9Rd6BAhLEAQ"
+                      class="text-sm leading-6 text-gray-300 hover:text-white">CUMHURİYET MAH, Anadolu Cd. <br> NO 588,
+                      35000
+                      Karşıyaka/İzmir</a>
+
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-around">
+          <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">Özçiçek Oto Tamir &copy;2023 Tüm Hakları
+            Saklıdır.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById('hamburger')
+      const menu = document.getElementById('menu')
+      const nav = document.getElementById('nav')
+      const handleClick = () => {
+        if (menu.classList.contains('hidden')) {
+          menu.classList.remove('hidden')
+        } else {
+          menu.classList.add('hidden')
         }
-        hamburger.addEventListener('click', handleClick)
-      </script>
-    
+      }
+      hamburger.addEventListener('click', handleClick)
+    </script>
+
 </body>
 </html>

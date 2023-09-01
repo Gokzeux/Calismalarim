@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/icon (2).png" width="200px" type="image/x-icon">
+
   <title>Özçiçek Oto Tamir</title>
 
   <style>
@@ -30,26 +32,27 @@
       left: 0;
       right: 0;
       bottom: 0;
-      margin: auto;
+      margin: 0 auto;
     }
 
     .table {
-      width: 790px;
+      width: 500px;
       height: 150px;
       background: none;
+      
     }
 
     .table .monitor-wrapper {
       background: #000000;
-      width: 780px;
-      height: 140px;
+      width: 590px;
+      height: 120px;
       box-shadow: 5px 5px 12px 2px rgba(7, 0, 0, 0.665);
     }
 
     .table .monitor-wrapper .monitor {
-      width: 700px;
+      width: 570px;
       height: 100px;
-      background-color: #344151;
+      background-color: #000000;
       overflow: hidden;
       white-space: nowrap;
       box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
@@ -57,20 +60,22 @@
 
     .table .monitor-wrapper .monitor p {
       font-family: "VT323", monospace;
-      font-size: 90px;
+      font-size: 70px;
+      margin-top: 10px;
       position: relative;
       display: inline-block;
       animation: move 19s infinite linear;
-      color: #EBB55F;
+      color: #ff0000;
+      text-shadow: 0px 0px 50px #ff0000;
     }
 
     @keyframes move {
       from {
-        left: 800px;
+        left: 600px;
       }
 
       to {
-        left: -4800px;
+        left: -4600px;
       }
     }
 
@@ -80,40 +85,51 @@
       background-repeat: no-repeat;
       background-size: 100%;
       width: auto;
-      height:100vh;
-
-      
+      height: 100vh;
+      position: relative;
     }
-    
-   @media only screen and (max-width:576px) {
-      .heroo{height: 10vh;}
-    } 
+
+    @media only screen and (max-width:576px) {
+      .heroo {
+        height: 10vh;
+      }
+    }
+
     @media only screen and (max-width:768px) {
-      .heroo{height: 20vh;}
+      .heroo {
+        height: 20vh;
+      }
     }
 
     @media only screen and (min-width:768px) {
-      .heroo{height: 40vh;}
+      .heroo {
+        height: 40vh;
+      }
     }
 
     @media only screen and (min-width:900px) {
-      .heroo{height: 70vh;}
+      .heroo {
+        height: 30vh;
+      }
     }
+
     @media only screen and (min-width:1000px) {
-      .heroo{height: 100vh;}
+      .heroo {
+        height: 70vh;
+      }
     }
 
 
-    .whatwedo{
+    .whatwedo {
       background-image: url("images/nyarkaplan.jpg");
       border-radius: 20px;
     }
 
 
 
-/* scrolbar */
+    /* scrolbar */
 
-::-webkit-scrollbar-track {
+    ::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
       background-color: #000000;
       border-radius: 10px;
@@ -122,6 +138,7 @@
     ::-webkit-scrollbar {
       width: 10px;
       background-color: rgb(0, 0, 0);
+
     }
 
     ::-webkit-scrollbar-thumb {
@@ -134,7 +151,9 @@
           color-stop(0.86, #639CD9));
     }
 
-
+    .none{
+      margin-right: 680px;
+    }
   </style>
 </head>
 
@@ -170,7 +189,7 @@
           <div class="flex flex-shrink-0 items-center">
             <img class="block h-20 w-full lg:hidden" src="images/logo.jpg" alt="ozcicek">
             <img class="hidden h-20 w-full lg:block" src="images/logo.jpg" alt="ozcicek">
-            <h4 class=" absolute text-white mt-12 -mb-12 -ms-6 font-bold">Özçiçek Oto Tamir</h4>
+            <h4 class=" absolute text-white mt-12 -mb-12 -ms-12 font-bold">Özçiçek Oto Tamir</h4>
           </div>
         </div>
         <div class="hidden sm:ml-6 sm:block">
@@ -185,7 +204,7 @@
             <a href="service.html"
               class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Hizmetlerimiz</a>
 
-            <a href="contact.htmla"
+            <a href="contact.html"
               class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">İletişim</a>
           </div>
         </div>
@@ -211,31 +230,36 @@
           class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">İletişim</a>
       </div>
     </div>
+  
+    
+  <div class="table center hidden lg:block mt-3 none">
+    <div class="monitor-wrapper center rounded-lg">
+      <div class="monitor center rounded-md">
+        <p class="-mt-5">Aracınızın Güvenilir Bakım Adresi...</p>
+      </div>
+    </div>
+  </div>
+  
   </nav>
 
 
-
+  
 
   <main class="">
-    <div class="heroo ">
+    <div class="heroo">
 
-      <div class="table center hidden lg:block ">
-        <div class="monitor-wrapper center rounded-lg ">
-          <div class="monitor center rounded-md">
-            <p class="-mt-5">Aracınızın Güvenilir Bakım Adresi. Aracınız onarım yapılırken siz müşteri
-              bekleme yerinde içeceğinizi yudumlayın...</p>
-          </div>
-        </div>
-      </div>
+      
 
     </div>
 
+    <!-- En çok verilen hizmet -->
     <section aria-labelledby="collections-heading" class="bg-[0000] text">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-          <h2 id="collections-heading" class="text-2xl font-bold text-white text-center">En Çok Verilen Hizmetlerimiz</h2>
+        <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-6">
+          <h2 id="collections-heading" class="text-2xl font-bold text-white text-center">En Çok Verilen Hizmetlerimiz
+          </h2>
 
-          <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+          <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0 cursor-pointer">
             <div class="group relative">
               <div
                 class="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-70 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
@@ -243,13 +267,11 @@
                   alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
                   class="h-full w-full object-cover object-center">
               </div>
-              <h3 class="mt-6 text-sm text-white">
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  Yağ değişim:
-                </a>
+              <h3 class="mt-6 text-xl font-bold text-white">
+                <span class="absolute inset-0"></span>
+                Yağ değişim:
               </h3>
-              <p class="text-base font-semibold text-white">Aracınızın Yağ filtresi, Hava filtresi ve mazot filtreleri
+              <p class="text-sm font-semibold text-white">Aracınızın Yağ filtresi, Hava filtresi ve mazot filtreleri
                 sökülüp yerine sıfır filtreler takılır. Aracınızda olan eski yağ boşaltılıp yenisi doldurulur yağ
                 seçiminize göre. </p>
             </div>
@@ -261,13 +283,11 @@
                   alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant."
                   class="h-full w-full object-cover object-center">
               </div>
-              <h3 class="mt-6 text-sm text-white">
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  Balata Değişimi:
-                </a>
+              <h3 class="mt-6 text-xl font-bold text-white">
+                <span class="absolute inset-0"></span>
+                Balata Değişimi:
               </h3>
-              <p class="text-base font-semibold text-white">Aracınızın hangi balataların bittiği tespit edilip bize ait
+              <p class="text-sm font-semibold text-white">Aracınızın hangi balataların bittiği tespit edilip bize ait
                 olan parça dükkanından balata seçimi yapabilirsiniz bütçenize göre. Tamamen Sizin isteğinize göre. Bizi
                 arayıp sorarak bu konuda bilgi alabilirsiniz</p>
             </div>
@@ -278,13 +298,11 @@
                 <img src="images/motorarıza.jpg" alt="Collection of four insulated travel bottles on wooden shelf."
                   class="h-full w-full object-cover object-center">
               </div>
-              <h3 class="mt-6 text-sm text-white">
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  Motor Arızası Bulma:
-                </a>
+              <h3 class="mt-6 text-xl font-bold text-white">
+                <span class="absolute inset-0"></span>
+                Motor Arızası Bulma:
               </h3>
-              <p class="text-base font-semibold text-white">Aracınızda garip sesler geliyor ise ustalarımızın tecrübesi
+              <p class="text-sm font-semibold text-white">Aracınızda garip sesler geliyor ise ustalarımızın tecrübesi
                 sayesinde sorun çözülecektir eğer ki elektronik bir arıza var ise <strong
                   class="text-lg text-blue-400">Arıza Bulma Cihazlarımız</strong> Mevcuttur.</p>
             </div>
@@ -299,34 +317,40 @@
 
         <div class="text-center text-2xl font-bold tracking-wider py-3">Peki Biz Ne Yapıyoruz ?</div>
         <div class="lg:text-sm text">
-      
-            <div class="mb-3 font-bold text-xs lg:text-sm">
-              Özçiçek Oto Tamir İşletmesi olarak, araç sahiplerinin güvenle sürüş yapabilmesi için gereken her türlü bakım
-              ve onarım hizmetini sunuyoruz. Araçlarınız, bizim için daha fazlasıdır; onlar sizin hayatınızın bir parçası,
-              özgürlüğünüzün ifadesi ve yolculuklarınızın ta kendisidir. Bu bilinçle, araçlarınıza özenle yaklaşarak, en
-              son teknoloji ve uzmanlığı bir araya getirerek, onların en iyi hallerini korumak ve geliştirmek için
-              çalışıyoruz.</div>
 
-              <div class="lg:text-xl sm:text-lg mt-6 text-[#220E24] mb-5 font-bold ">Özçiçek Oto Tamir İşletmesi olarak, aşağıdaki hizmetleri sunmaktayız;</div>
+          <div class="my-5 font-bold text-xs lg:text-sm">
+            Özçiçek Oto Tamir İşletmesi olarak, araç sahiplerinin güvenle sürüş yapabilmesi için gereken her türlü bakım
+            ve onarım hizmetini sunuyoruz. Araçlarınız, bizim için daha fazlasıdır; onlar sizin hayatınızın bir parçası,
+            özgürlüğünüzün ifadesi ve yolculuklarınızın ta kendisidir. Bu bilinçle, araçlarınıza özenle yaklaşarak, en
+            son teknoloji ve uzmanlığı bir araya getirerek, onların en iyi hallerini korumak ve geliştirmek için
+            çalışıyoruz.</div>
+
+          <div class="lg:text-xl sm:text-lg mt-6 text-[#220E24] mb-5 font-bold ">Özçiçek Oto Tamir İşletmesi olarak,
+            aşağıdaki hizmetleri sunmaktayız;</div>
 
 
-            <div class="mb-3"><span class="font-bold">Tamir ve Bakım</span>: Araçlarınızın ihtiyaç duyduğu düzenli bakım ve acil tamir işlemlerini en üst kalitede
-              gerçekleştiriyoruz. Motor, şanzıman, fren sistemi, süspansiyon ve daha birçok mekanik ve elektronik
-              bileşen üzerinde uzmanız. </div>
+          <div class="my-8"><span class="font-bold">Tamir ve Bakım</span>: Araçlarınızın ihtiyaç duyduğu düzenli bakım
+            ve acil tamir işlemlerini en üst kalitede
+            gerçekleştiriyoruz. Motor, şanzıman, fren sistemi, süspansiyon ve daha birçok mekanik ve elektronik
+            bileşen üzerinde uzmanız. </div>
 
-            <div class="mb-3"><span class="font-bold">Elektronik Hizmetler</span>: Araçların günümüzdeki karmaşık elektronik sistemleri konusunda uzman ekibimiz, her
-              türlü elektriksel ve elektronik arızayı teşhis edebilir ve çözebilir.</div>
+          <div class="my-8"><span class="font-bold">Elektronik Hizmetler</span>: Araçların günümüzdeki karmaşık
+            elektronik sistemleri konusunda uzman ekibimiz, her
+            türlü elektriksel ve elektronik arızayı teşhis edebilir ve çözebilir.</div>
 
-            <div class="mb-3"><span class="font-bold">Lastik ve Jant Bakımı</span>: Lastik değişimi, rot-balans ayarı ve jant tamiri gibi lastik ve jant bakım
-              hizmetleri sunarak, sürüş güvenliğinizi artırmanıza yardımcı oluyoruz.</div>
+          <div class="my-8"><span class="font-bold">Lastik ve Jant Bakımı</span>: Lastik değişimi, rot-balans ayarı ve
+            jant tamiri gibi lastik ve jant bakım
+            hizmetleri sunarak, sürüş güvenliğinizi artırmanıza yardımcı oluyoruz.</div>
 
-              <div class="mb-3"><span class="font-bold">Boya ve Kaporta İşleri</span>: Kazalardan kaynaklanan hasarları düzelterek aracınızın dış görünümünü yeniden
-                kazanmasını sağlıyoruz. Profesyonel boya ve kaporta işleriyle aracınızı ilk günkü haline döndürüyoruz.
-  
-              Yolculuğunuzda bizimle birlikte olmanızı dileriz.</div>
-            <div class="mb-3 font-bold">Her araç sahibinin ihtiyaçları farklıdır ve her aracın bakım gereksinimleri benzersizdir. Biz, her
-              müşterimizin taleplerini özenle dinleyerek, en uygun ve etkili çözümleri sunmayı taahhüt ediyoruz.
-              Özçiçek Oto Tamir İşletmesi olarak, aracınızın en iyi haliyle kalmasını sağlamak için buradayız.</div>
+          <div class="my-8"><span class="font-bold">Boya ve Kaporta İşleri</span>: Kazalardan kaynaklanan hasarları
+            düzelterek aracınızın dış görünümünü yeniden
+            kazanmasını sağlıyoruz. Profesyonel boya ve kaporta işleriyle aracınızı ilk günkü haline döndürüyoruz.
+
+            Yolculuğunuzda bizimle birlikte olmanızı dileriz.</div>
+          <div class="my-8 font-bold">Her araç sahibinin ihtiyaçları farklıdır ve her aracın bakım gereksinimleri
+            benzersizdir. Biz, her
+            müşterimizin taleplerini özenle dinleyerek, en uygun ve etkili çözümleri sunmayı taahhüt ediyoruz.
+            Özçiçek Oto Tamir İşletmesi olarak, aracınızın en iyi haliyle kalmasını sağlamak için buradayız.</div>
 
           <div class="text-xl font-bold tracking-wider">
             Saygılarımızla,
@@ -356,10 +380,9 @@
 
 
   <footer class="bg-[#000]">
-    <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32 ">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <img class="h-20 w-auto" src="images/footerlogo.jpg" alt="ozcicek">
+        <img class="h-20 w-auto" src="images/logo.jpg" alt="ozcicek">
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
@@ -385,26 +408,11 @@
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-xl  font-bold leading-6 text-white">İletişim</h3>
               <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <a href="tel:0 532 391 6947" class="text-sm leading-6 text-gray-300 hover:text-white">Serdar Usta:<span
-                      class="text-blue-400 font-bold"> 0 532 391 6947</a>
-                </li>
-
-                <li>
-                  <a href="tel: 0 538 645 8295" class="text-sm leading-6 text-gray-300 hover:text-white">Orhan Usta:<span
-                      class="text-blue-400"> 0 538 645 8295</a>
-                </li>
-
-                <li>
-                  <a href="tel:0 535 435 9136" class="text-sm leading-6 text-gray-300 hover:text-white">Parça Bölümü Fikret:<span
-                      class="text-blue-400"> 0 535 435 9136</a>
-                </li>
-
                 <div class="text-lg text-white font-bold">Adresimiz;</div>
                 <li>
-                  <a href="http://https://www.google.com/maps/dir/38.4188892,27.0676394/%C3%B6z%C3%A7i%C3%A7ek+oto/@38.412357,27.0326663,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x14bbd9e2bfd12b15:0xde6833d245b8d301!2m2!1d27.0926046!2d38.479924?entry=ttu"
+                  <a target="_blank"
+                    href="https://www.google.com/maps/dir//%C3%B6z%C3%A7i%C3%A7ek+otomotiv/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x14bbd9e2bfd12b15:0xde6833d245b8d301?sa=X&ved=2ahUKEwjl3YbQwIeBAxUURvEDHbWNA-0Q9Rd6BAhAEAA&ved=2ahUKEwjl3YbQwIeBAxUURvEDHbWNA-0Q9Rd6BAhLEAQ"
                     class="text-sm leading-6 text-gray-300 hover:text-white">CUMHURİYET MAH, Anadolu Cd. <br> NO 588,
                     35000
                     Karşıyaka/İzmir</a>
@@ -417,7 +425,8 @@
         </div>
       </div>
       <div class="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-around">
-        <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">Özçiçek Oto Tamir &copy;2023  Tüm Hakları Saklıdır.</p>
+        <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">Özçiçek Oto Tamir &copy;2023 Tüm Hakları
+          Saklıdır.</p>
       </div>
     </div>
   </footer>
